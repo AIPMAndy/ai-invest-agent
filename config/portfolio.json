@@ -1,0 +1,237 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-02-11",
+  "sectors": [
+    {
+      "name": "医疗",
+      "target_weight": 0.30,
+      "positions": [
+        {
+          "name": "恒瑞医药",
+          "code": "600276.SH",
+          "market": "A股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "核心",
+          "notes": "创新药龙头"
+        },
+        {
+          "name": "药明康德",
+          "code": "603259.SH",
+          "market": "A股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "核心",
+          "notes": "CXO龙头"
+        },
+        {
+          "name": "迈瑞医疗",
+          "code": "300760.SZ",
+          "market": "A股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "核心",
+          "notes": "医疗器械龙头"
+        },
+        {
+          "name": "创新药ETF",
+          "code": "159992.SZ",
+          "market": "A股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "配置",
+          "notes": "创新药指数"
+        },
+        {
+          "name": "恒生医药ETF",
+          "code": "159892.SZ",
+          "market": "港股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "配置",
+          "notes": "港股医药指数"
+        },
+        {
+          "name": "中药ETF",
+          "code": "560080.SH",
+          "market": "A股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "配置",
+          "notes": "中药指数"
+        }
+      ]
+    },
+    {
+      "name": "科技",
+      "target_weight": 0.30,
+      "positions": [
+        {
+          "name": "腾讯控股",
+          "code": "00700.HK",
+          "market": "港股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "核心",
+          "notes": "互联网龙头"
+        },
+        {
+          "name": "阿里巴巴",
+          "code": "09988.HK",
+          "market": "港股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "核心",
+          "notes": "电商+云龙头"
+        },
+        {
+          "name": "恒生科技ETF",
+          "code": "513180.SH",
+          "market": "港股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "配置",
+          "notes": "港股科技指数"
+        },
+        {
+          "name": "中概互联ETF",
+          "code": "513050.SH",
+          "market": "美股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "配置",
+          "notes": "中概互联指数"
+        },
+        {
+          "name": "半导体ETF",
+          "code": "512480.SH",
+          "market": "A股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "配置",
+          "notes": "半导体指数"
+        },
+        {
+          "name": "纳斯达克ETF",
+          "code": "513100.SH",
+          "market": "美股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "配置",
+          "notes": "纳斯达克100指数"
+        }
+      ]
+    },
+    {
+      "name": "消费金融",
+      "target_weight": 0.20,
+      "positions": [
+        {
+          "name": "贵州茅台",
+          "code": "600519.SH",
+          "market": "A股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "核心",
+          "notes": "白酒龙头"
+        },
+        {
+          "name": "招商银行",
+          "code": "600036.SH",
+          "market": "A股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "核心",
+          "notes": "零售银行龙头"
+        },
+        {
+          "name": "白酒ETF",
+          "code": "512690.SH",
+          "market": "A股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "配置",
+          "notes": "白酒指数"
+        },
+        {
+          "name": "银行ETF",
+          "code": "512800.SH",
+          "market": "A股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "配置",
+          "notes": "银行指数"
+        }
+      ]
+    },
+    {
+      "name": "红利",
+      "target_weight": 0.20,
+      "positions": [
+        {
+          "name": "中证红利ETF",
+          "code": "515080.SH",
+          "market": "A股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "核心",
+          "notes": "A股红利指数"
+        },
+        {
+          "name": "红利低波ETF",
+          "code": "512890.SH",
+          "market": "A股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "配置",
+          "notes": "红利低波指数"
+        },
+        {
+          "name": "港股央企红利ETF",
+          "code": "513910.SH",
+          "market": "港股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "配置",
+          "notes": "港股央企红利"
+        },
+        {
+          "name": "港股高股息ETF",
+          "code": "513690.SH",
+          "market": "港股",
+          "weight": 0.05,
+          "cost_price": null,
+          "base_position": 0.05,
+          "priority": "配置",
+          "notes": "港股高股息"
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "temperature_buy_threshold": 30,
+    "temperature_sell_threshold": 50,
+    "max_single_position": 0.10,
+    "min_single_position": 0.02,
+    "rebalance_trigger": 0.05
+  }
+}
