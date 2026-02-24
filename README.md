@@ -1,5 +1,12 @@
 # AI投资Agent
 
+[![Stars](https://img.shields.io/github/stars/xzjpa6/ai-invest-agent?style=social)](https://github.com/xzjpa6/ai-invest-agent/stargazers)
+[![Forks](https://img.shields.io/github/forks/xzjpa6/ai-invest-agent?style=social)](https://github.com/xzjpa6/ai-invest-agent/network/members)
+[![License](https://img.shields.io/github/license/xzjpa6/ai-invest-agent)](./LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/xzjpa6/ai-invest-agent)](https://github.com/xzjpa6/ai-invest-agent/commits/main)
+
+> 从“看行情”到“做决策”，建立可复用、可解释、可迭代的 AI 投资研究工作流。
+
 > 一个面向 A股 / 港股 / 美股 的 AI 价值投资复盘系统，
 > 将“信息收集 → 结构化分析 → 温度量化 → 操作建议”标准化为可复用流程。
 
