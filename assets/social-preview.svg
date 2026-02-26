@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="AI投资Agent Social Preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+
+  <circle cx="1120" cy="120" r="180" fill="#38BDF8" opacity="0.12"/>
+  <circle cx="180" cy="560" r="240" fill="#A78BFA" opacity="0.10"/>
+
+  <rect x="80" y="70" rx="22" ry="22" width="210" height="48" fill="url(#chip)" opacity="0.95"/>
+  <text x="185" y="102" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" fill="#0B1022" text-anchor="middle" font-weight="700">OPEN SOURCE</text>
+
+  <text x="80" y="215" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="72" fill="#F8FAFC" font-weight="800">AI投资Agent</text>
+  <text x="80" y="282" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="34" fill="#CBD5E1" font-weight="500">Cross-Market AI Investing Review System</text>
+
+  <text x="80" y="370" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="28" fill="#E2E8F0">Macro → Sector → Temperature → Position</text>
+  <text x="80" y="420" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" fill="#93C5FD">A-share • Hong Kong • US Equity</text>
+
+  <rect x="78" y="470" rx="16" ry="16" width="780" height="96" fill="#020617" opacity="0.55" stroke="#334155"/>
+  <text x="110" y="525" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="26" fill="#F8FAFC" font-weight="600">30° Buy Low · 50° Sell High</text>
+  <text x="110" y="555" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" fill="#94A3B8">Standardized outputs: Markdown / DOCX / XLSX</text>
+
+  <text x="1180" y="595" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" fill="#CBD5E1" text-anchor="end">github.com/AIPMAndy/ai-invest-agent</text>
+</svg>

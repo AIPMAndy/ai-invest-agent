@@ -1,9 +1,13 @@
 # AI投资Agent
 
-[![Stars](https://img.shields.io/github/stars/xzjpa6/ai-invest-agent?style=social)](https://github.com/xzjpa6/ai-invest-agent/stargazers)
-[![Forks](https://img.shields.io/github/forks/xzjpa6/ai-invest-agent?style=social)](https://github.com/xzjpa6/ai-invest-agent/network/members)
-[![License](https://img.shields.io/github/license/xzjpa6/ai-invest-agent)](./LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/xzjpa6/ai-invest-agent)](https://github.com/xzjpa6/ai-invest-agent/commits/main)
+[中文](./README.md) | [English](./README_EN.md)
+
+[![Stars](https://img.shields.io/github/stars/AIPMAndy/ai-invest-agent?style=social)](https://github.com/AIPMAndy/ai-invest-agent/stargazers)
+[![Forks](https://img.shields.io/github/forks/AIPMAndy/ai-invest-agent?style=social)](https://github.com/AIPMAndy/ai-invest-agent/network/members)
+[![License](https://img.shields.io/github/license/AIPMAndy/ai-invest-agent)](./LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/AIPMAndy/ai-invest-agent)](https://github.com/AIPMAndy/ai-invest-agent/commits/main)
+
+![AI投资Agent Social Preview](./assets/social-preview.svg)
 
 > 从“看行情”到“做决策”，建立可复用、可解释、可迭代的 AI 投资研究工作流。
 
@@ -21,6 +25,16 @@
 欢迎交流与合作：
 微信号：AIPMAndy
 GitHub：https://github.com/xzjpa6
+
+## GitHub 增长配置
+
+- 英文文档：`README_EN.md`
+- 社交预览图：`assets/social-preview.svg`（可在仓库 Settings → General → Social preview 上传）
+- Topics 配置：`.github/topics.json`
+
+```bash
+GITHUB_TOKEN=你的Token bash scripts/set_github_topics.sh
+```
 
 ## 项目定位
 
