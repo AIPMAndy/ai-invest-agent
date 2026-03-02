@@ -1,125 +1,184 @@
-# AIInvestAgent
+<div align="center">
 
-[English](./README_EN.md) | [中文](./README.md)
+# 🔥 AI Invest Agent
+
+**AI-powered investment review — from gut feelings to systematic analysis**
 
 [![Stars](https://img.shields.io/github/stars/AIPMAndy/ai-invest-agent?style=social)](https://github.com/AIPMAndy/ai-invest-agent/stargazers)
 [![Forks](https://img.shields.io/github/forks/AIPMAndy/ai-invest-agent?style=social)](https://github.com/AIPMAndy/ai-invest-agent/network/members)
 [![License](https://img.shields.io/github/license/AIPMAndy/ai-invest-agent)](./LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/AIPMAndy/ai-invest-agent)](https://github.com/AIPMAndy/ai-invest-agent/commits/main)
 
-![AIInvestAgent Social Preview](./assets/social-preview.svg)
+**English** | [简体中文](./README.md)
 
-> A cross-market AI investing review system for A-shares, Hong Kong, and US equities.
-> It standardizes the full workflow from data gathering to actionable portfolio decisions.
+</div>
 
-> ⭐ If this project is helpful, please give it a Star.
+---
 
-## Author
+> ⭐ If this project helps you, give it a Star — it keeps the updates coming!
 
-Hi, I’m Andy.
+## 🎯 What Does This Solve?
 
-Former AI product expert at Tencent and Baidu, ex-VP at a large-model unicorn, now startup CEO. After seeing multiple tech hype cycles, I focus on long-term execution and repeatable AI business systems.
+| Pain Point | Solution |
+|------------|----------|
+| Information scattered across markets | Unified framework covering A-shares, HK, and US |
+| Inconsistent analysis methods | Standardized 4-step process, repeatable and iterable |
+| Emotional buy/sell decisions | Temperature model — let data drive decisions |
+| Analysis without actionable output | 10-dimension deep dive + position recommendations |
 
-For collaboration:
-WeChat: AIPMAndy
-GitHub: https://github.com/xzjpa6
+---
 
-## GitHub Growth Setup
+## 🆚 Why This Project?
 
-- English doc: `README_EN.md`
-- Social preview image: `assets/social-preview.svg` (upload in Settings → General → Social preview)
-- Topics config: `.github/topics.json`
+| Capability | Manual Review | Quant Tools | **AI Invest Agent** |
+|------------|:------------:|:-----------:|:-------------------:|
+| Cross-market (A/HK/US) | ❌ | 🟡 Partial | ✅ 33 indices |
+| Standardized workflow | ❌ | ❌ | ✅ 4-step framework |
+| Quantified valuation | ❌ | ✅ | ✅ Buy at 30° / Sell at 50° |
+| AI-driven analysis | ❌ | ❌ | ✅ Prompt-powered |
+| Multi-format output | 🟡 Manual | ❌ | ✅ MD/DOCX/XLSX |
+| Zero-code setup | ❌ | ❌ | ✅ Load prompt & go |
 
-```bash
-GITHUB_TOKEN=your_token bash scripts/set_github_topics.sh
+---
+
+## 🌡️ Core: Temperature Model
+
+Turns "is this overvalued?" into a single number:
+
+```
+Temperature = Historical PE Percentile × 100
 ```
 
-## Why This Project
+| Temperature | Status | Action |
+|-------------|--------|--------|
+| 0-30℃ | 🟢 Undervalued | Buy zone |
+| 30-50℃ | 🟡 Fair value | Hold |
+| 50-100℃ | 🔴 Overvalued | Gradually sell |
 
-`AIInvestAgent` solves three common problems in discretionary investing:
+Covers **33 indices**: A-shares (20) + Hong Kong (8) + US (5)
 
-1. Fragmented information across macro, sectors, indices, and positions.
-2. Non-repeatable analysis process and inconsistent decision quality.
-3. Emotion-driven execution with weak risk discipline.
+---
 
-## Core Features
+## 📊 4-Step Review Framework
 
-- Cross-market analysis: A-shares, Hong Kong, US.
-- Structured 4-step review framework.
-- 33-index valuation temperature model.
-- 10-dimension position deep-dive analysis.
-- Multi-format output: `Markdown`, `DOCX`, `XLSX`.
-- Fully configurable data sources, indices, and portfolio universe.
-
-## 4-Step Framework
-
-### Step 1: Macro Analysis
-- Policy, liquidity, rates, currency, macro fundamentals, key risk events.
-
-### Step 2: Sector Analysis
-- Tech / Healthcare / Dividend / Consumer-Finance across all three markets.
-
-### Step 3: Index Temperature
-- Formula: `Temperature = Historical PE Percentile × 100`.
-- Coverage: 33 indices (A-share 20 + HK 8 + US 5).
-
-### Step 4: Position Deep-Dive
-- 10 dimensions including fundamentals, valuation, moat, drivers, risks, trend points, ratings, and action plan.
-
-## Project Structure
-
-```text
-AI投资Agent/
-├── README.md
-├── README_EN.md
-├── LICENSE
-├── requirements.txt
-├── config/
-├── prompts/
-├── skills/
-├── tools/
-└── output/   # ignored by git
+```
+Step 1: Macro Analysis → Policy / Liquidity / Rates / FX / Fundamentals
+Step 2: Sector Analysis → Tech / Healthcare / Dividend / Consumer (3 markets)
+Step 3: Temperature   → Quantified valuation percentile for 33 indices
+Step 4: Position Analysis → 10-dimension deep dive + action plan
 ```
 
-## Quick Start
+---
+
+## 🚀 Quick Start
 
 ```bash
+# 1. Clone
+git clone https://github.com/AIPMAndy/ai-invest-agent.git
+cd ai-invest-agent
+
+# 2. Install dependencies
 pip install -r requirements.txt
+
+# 3. Load prompts in your AI tool (Claude/ChatGPT/Kimi)
+# Full weekly review: prompts/weekly_review.md
+# Daily quick check:  prompts/quick_check.md
 ```
 
-- Weekly full review prompt: `prompts/weekly_review.md`
-- Daily quick check prompt: `prompts/quick_check.md`
+**Output**: Macro analysis + Sector analysis + Temperature report + Position recommendations (MD / DOCX / XLSX)
 
-Local tool examples:
+---
 
-```bash
-python tools/md2docx.py report.md report.docx 楷体
+## 📁 Project Structure
+
+```
+ai-invest-agent/
+├── README.md          # Chinese docs
+├── README_EN.md       # English docs
+├── LICENSE            # Apache 2.0 + additional terms
+├── CONTRIBUTING.md    # Contribution guide
+├── requirements.txt   # Python dependencies
+├── config/            # Index, portfolio, data source configs
+│   ├── indices.json   # 33 index definitions
+│   ├── portfolio.json # Portfolio config
+│   └── data_sources.json
+├── prompts/           # Review prompts
+│   ├── weekly_review.md
+│   └── quick_check.md
+├── skills/            # Analysis skill modules
+│   ├── macro_analysis.md
+│   ├── sector_analysis.md
+│   ├── temperature_gauge.md
+│   └── position_analysis.md
+├── tools/             # Utility scripts
+│   ├── md2docx.py     # MD to Word
+│   └── create_excel.py
+├── assets/            # Assets
+├── scripts/           # Automation scripts
+└── .github/           # GitHub config
+    └── ISSUE_TEMPLATE/
 ```
 
-```python
-from tools.create_excel import create_position_analysis_excel, create_temperature_excel
+---
 
-create_position_analysis_excel(data, "position_analysis.xlsx")
-create_temperature_excel(data, "index_temperature.xlsx")
-```
+## 💡 Use Cases
 
-## Output Artifacts
+- **Weekend Review**: Load `weekly_review.md` for a systematic weekly debrief
+- **Daily Quick Check**: Load `quick_check.md` for a 5-minute market snapshot
+- **Buy Decisions**: Use the temperature model to gauge index valuations
+- **Portfolio Management**: 10-dimension deep dive on current holdings
+- **Report Generation**: Auto-generate Word/Excel investment reports
 
-Generated under `output/{date}/`:
+---
 
-- Macro reports (detailed + summary, MD + DOCX)
-- Sector reports (detailed + summary, MD + DOCX)
-- Index temperature report (MD + DOCX)
-- Position deep-dive report (XLSX)
+## 🗺️ Roadmap
 
-## Roadmap
-
-- [ ] Backtesting module for temperature strategy
+- [x] Cross-market 4-step review framework
+- [x] 33-index temperature model
+- [x] 10-dimension position deep-dive
+- [x] MD / DOCX / XLSX multi-format output
+- [x] Visualization Dashboard (React)
+- [ ] Backtesting module (historical temperature strategy returns)
 - [ ] Automated data ingestion pipeline
-- [ ] Visualization dashboard (heatmap + allocation hints)
-- [ ] Multi-strategy comparison (value/momentum/dividend)
+- [ ] Multi-strategy comparison (value / momentum / dividend)
 
-## Disclaimer
+---
 
-This project is for research and engineering practice only.
-It is **not** investment advice.
+## 👨‍💻 Author
+
+**Andy** — Former AI Product Expert at Tencent & Baidu → VP at LLM Unicorn → Startup CEO
+
+Building repeatable AI-powered investment analysis systems.
+
+[![WeChat](https://img.shields.io/badge/WeChat-AIPMAndy-07C160?logo=wechat&logoColor=white)](.)
+[![GitHub](https://img.shields.io/badge/GitHub-AIPMAndy-181717?logo=github)](https://github.com/AIPMAndy)
+
+---
+
+## ⚠️ Disclaimer
+
+This project is for educational and engineering practice purposes only. It is **not investment advice**. Invest at your own risk.
+
+---
+
+## 📄 License
+
+Apache License 2.0 with additional terms:
+
+**✅ Allowed**
+- Personal study & research: free, go ahead
+- Internal enterprise use: free, modifications welcome
+- Open-source citation: must retain author attribution
+
+**❌ Prohibited (without written authorization)**
+- De-branding: removing "AI酋长Andy" attribution
+- Commercial SaaS: using source code for paid multi-tenant services
+- Resale: bundling or selling as paid course deliverables
+
+**Commercial licensing**: WeChat AIPMAndy
+
+---
+
+**If this project helps you, please give it a ⭐ Star!**
+
+**Copyright © 2026 AI酋长Andy. All rights reserved.**
